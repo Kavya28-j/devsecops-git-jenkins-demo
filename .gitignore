@@ -1,0 +1,21 @@
+# Secrets & Credentials
+*.env
+*.pem
+*.key
+*.secret
+credentials/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# OS & Editor
+.DS_Store
+*.swp
+*.log
+
+# Node / Python
+node_modules/
+__pycache__/
+venv/
