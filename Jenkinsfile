@@ -35,7 +35,7 @@ pipeline {
                 echo '🔒 Running security checks...'
                 sh '''
                     echo "Checking for secrets in code..."
-                    if grep -rE "password\|secret\|api_key" *.sh 2>/dev/null; then
+                    if grep -rE "password|secret|api_key" *.sh 2>/dev/null; then
                         echo "WARNING: Possible secrets found!"
                     else
                         echo "No hardcoded secrets detected"
